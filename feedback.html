@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>World Monuments | Feedback</title>
+  <meta name="description" content="Send feedback about the World Monuments site using an accessible HTML form.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">⟡</span>
+        <span class="brand-name">World Monuments</span>
+      </a>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="sitemap.html">Sitemap</a>
+      </nav>
+        <button id="darkModeBtn" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to light mode">Light mode</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Feedback</h1>
+
+    <section class="lead">
+     <p>Your feedback helps us improve and create a better experience for everyone.</p>
+    </section>
+
+    <section class="card">
+      <h2>Feedback form</h2>
+
+      <form action="" method="post" class="form">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+
+        <div class="form-row">
+          <label for="favorite">Favorite monument</label>
+          <select id="favorite" name="favorite">
+            <option value="">Select one…</option>
+            <option value="pyramid">Great Pyramid of Giza</option>
+            <option value="colosseum">Colosseum</option>
+            <option value="taj">Taj Mahal</option>
+            <option value="eiffel">Eiffel Tower</option>
+            <option value="machu">Machu Picchu</option>
+            <option value="petra">Petra (Al-Khazneh)</option>
+          </select>
+        </div>
+
+        <fieldset class="form-row">
+          <legend>Overall rating</legend>
+          <div class="radio-row">
+            <input id="rate-1" name="rating" type="radio" value="1">
+            <label for="rate-1">1</label>
+
+            <input id="rate-2" name="rating" type="radio" value="2">
+            <label for="rate-2">2</label>
+
+            <input id="rate-3" name="rating" type="radio" value="3">
+            <label for="rate-3">3</label>
+
+            <input id="rate-4" name="rating" type="radio" value="4">
+            <label for="rate-4">4</label>
+
+            <input id="rate-5" name="rating" type="radio" value="5" checked>
+            <label for="rate-5">5</label>
+          </div>
+        </fieldset>
+
+        <div class="form-row">
+          <label for="message">Comments</label>
+          <textarea id="message" name="message" rows="6" placeholder="What worked well? What should we improve?"></textarea>
+        </div>
+
+        <div class="form-row checkbox-row">
+          <input id="consent" name="consent" type="checkbox" required>
+          <label for="consent">I understand this is a demo form and that submissions are not processed.</label>
+        </div>
+
+        <div class="form-row">
+          <button type="submit">Submit feedback</button>
+        </div>
+      
+        <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>World Monuments</p>
+    </div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
