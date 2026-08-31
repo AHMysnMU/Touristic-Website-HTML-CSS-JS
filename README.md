@@ -1,67 +1,161 @@
-Implemented Features
+# World Monuments 🌍
 
-The delivery consists of a complete static, multi-page website focused on famous world monuments.
+A responsive tourism website that introduces some of the world's most famous historical monuments.
 
-Homepage:
-Welcomes users with an introductory message and brief sections explaining the beauty and importance of preserving historical monuments.
+The project was built using **HTML, CSS, and JavaScript** to practice front-end web development, responsive design, navigation between multiple pages, forms, and basic JavaScript interactivity.
 
-Gallery Page:
-Displays six famous monuments (e.g., Pyramids of Giza, Colosseum, Taj Mahal, Eiffel Tower, Machu Picchu, Petra) in a grid layout. Each image links to a dedicated detail page.
+## About the Project
 
-Monument Detail Pages (6):
-Each page includes:
+World Monuments is a static multi-page website where visitors can explore famous landmarks from different countries and learn about their history and important facts.
 
-A large image of the monument
+The website contains a gallery of six monuments. Each monument has its own dedicated page with an image, historical information, key facts, and a link back to the gallery.
 
-A short historical description
+## Monuments Included
 
-Key facts (location, year built, etc.)
+- Great Pyramid of Giza
+- Colosseum
+- Taj Mahal
+- Eiffel Tower
+- Machu Picchu
+- Petra (Al-Khazneh)
 
-A “Back to Gallery” link for easy navigation
+## Features
 
-About Us Page:
-Explains the purpose of the site and introduces the creator, Ahmad Yassine, in a simple first-person tone.
+- Responsive design for desktop, tablet, and mobile devices
+- Multi-page website structure
+- Monument gallery
+- Dedicated page for each monument
+- Historical descriptions and key facts
+- Dark and light mode
+- Theme preference saved using `localStorage`
+- Active navigation page highlighting
+- Responsive navigation menu
+- Feedback form with HTML validation
+- Favorite monument selection
+- Website rating system
+- Demo feedback submission message
+- Sitemap containing links to the main pages and monument pages
+- Image hover effects
+- Accessible form labels and keyboard focus styles
 
-Feedback Page:
-Contains a basic contact form with fields for name, email, and comments, along with a “Submit Feedback” button.
+## Pages
 
-Sitemap Page:
-Lists links to all pages (Home, Gallery, About, Feedback, Sitemap, and monument pages) in a simple bulleted format.
+### Home
+Introduces the website and explains the importance of historical monuments and preserving cultural heritage.
 
-Navigation Menu:
-A consistent header across all pages with links to main sections and a clickable site title (“World Monuments”) that returns to the homepage.
+### Gallery
+Displays all six monuments in a responsive grid. Each monument can be selected to open its dedicated detail page.
 
-Responsive Design:
-The layout adapts to different screen sizes using flexible grids and scalable images. Content remains readable and accessible on desktops, tablets, and mobile devices.
+### Monument Pages
+Each monument has its own page containing:
 
+- Monument image
+- Short historical description
+- Important facts
+- Link back to the gallery
 
+### About
+Explains the purpose of the project and introduces the creator.
 
+### Feedback
+Contains a feedback form where visitors can:
 
+- Enter their name
+- Enter their email
+- Choose their favorite monument
+- Rate the website
+- Write comments
 
-Known Bugs and Limitations
+The form is a demonstration only and does not send information to a server.
 
+### Sitemap
+Provides quick access to the main pages and all monument pages.
 
-Dark Mode Not Implemented:
-Theme-switching code exists, but no visible toggle is provided.
+## Technologies Used
 
-Navigation Highlighting Missing:
-The active page is not visually indicated in the navigation menu.
+- HTML5
+- CSS3
+- JavaScript
+- Local Storage
+- Responsive Web Design
 
-Browser Compatibility:
-Works well in modern browsers; layout may break in very old browsers (e.g., older versions of Internet Explorer).
+## JavaScript Features
 
+JavaScript is used to add several interactive features to the website:
 
+- Switch between dark and light themes
+- Save the selected theme in the browser using `localStorage`
+- Highlight the current page in the navigation bar
+- Handle the demo feedback form submission
 
-How to Open the Site
+## Responsive Design
 
-Unzip the project folder.
+The website adapts to different screen sizes using CSS Grid, Flexbox, responsive images, and media queries.
 
-Locate and open index.html in any modern web browser.
+Layouts automatically adjust for:
 
-No server or internet connection is required.
+- Desktop
+- Tablet
+- Mobile
 
-Navigation works entirely offline as all content is locally stored.
+## Project Structure
 
-Overall Assessment
+World-Monuments/
+│
+├── index.html
+├── gallery.html
+├── about.html
+├── feedback.html
+├── sitemap.html
+│
+├── monument-1.html
+├── monument-2.html
+├── monument-3.html
+├── monument-4.html
+├── monument-5.html
+├── monument-6.html
+│
+├── css/
+│   └── styles.css
+│
+├── js/
+│   └── main.js
+│
+└── images/
+    └── monument images and thumbnails
 
-The website is a fully navigable, beginner-friendly static site with clear structure, informative content, responsive design, and consistent navigation. Its limitations are primarily related to incomplete interactive features rather than core functionality.
+## How to Run
+
+No installation or server is required.
+
+1. Download or clone the project.
+2. Open the project folder.
+3. Open `index.html` in a modern web browser.
+
+The website can run locally because all HTML, CSS, JavaScript, and images are included in the project.
+
+## Project Purpose
+
+This project was created to practice and improve front-end web development skills, especially:
+
+- Building multi-page websites
+- HTML page structure
+- CSS styling
+- Flexbox and Grid
+- Responsive design
+- Working with images
+- HTML forms
+- DOM manipulation
+- JavaScript events
+- Local storage
+- Organizing a front-end project into separate HTML, CSS, JavaScript, and image files
+
+## Note
+
+The website is a front-end project only. The feedback form does not connect to a backend or database, so submitted feedback is not permanently stored.
+
+## Author
+
+**Ahmad Yassine**
+
+Computer Science Student
